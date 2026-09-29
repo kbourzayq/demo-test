@@ -1,0 +1,15 @@
+[tools]
+node = "22"
+pnpm = "11"
+
+[tasks.setup]
+run = "pnpm install --frozen-lockfile"
+
+[tasks.build]
+run = "pnpm build"
+
+[tasks.test]
+run = "pnpm test"
+
+[tasks.dev]
+run = "pnpm dev --host 0.0.0.0"
